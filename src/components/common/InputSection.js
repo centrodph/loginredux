@@ -15,6 +15,7 @@ class InputSection extends Component {
           className="input"
           onChange={this.props.onChange}
           placeholder={this.props.placeholder}
+          value={this.props.value}
         />
       </div>
     );

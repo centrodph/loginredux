@@ -10,7 +10,11 @@ class CheckboxSection extends Component {
     return (
       <div className=" input-section {this.props.className}">
         <label className="checkbox">
-          <input type="checkbox" onChange={this.props.onChange} />
+          <input
+            type="checkbox"
+            onChange={this.props.onChange}
+            defaultChecked={this.props.checked}
+          />
           {this.props.label}
         </label>
       </div>
